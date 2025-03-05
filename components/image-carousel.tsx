@@ -37,7 +37,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         {images.map((src, index) => (
           <div key={index} className="min-w-full h-full flex-shrink-0">
             <img
-              src={src || "/placeholder.svg"}
+              src={src || "placeholder.svg"}
               alt={`Carousel image ${index + 1}`}
               className="w-full h-full object-cover"
             />

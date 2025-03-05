@@ -15,6 +15,8 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
   experimental: {
     webpackBuildWorker: true,
@@ -23,6 +25,8 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === 'production' ? '/MaxResume' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/MaxResume/' : '',
   output: 'export',
+  // Ensure trailing slashes are used
+  trailingSlash: true,
 }
 
 mergeConfig(nextConfig, userConfig)

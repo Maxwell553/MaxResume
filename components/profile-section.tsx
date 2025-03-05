@@ -21,7 +21,7 @@ export default function ProfileSection() {
         {/* Profile Picture */}
         <div className="relative">
           <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-black">
-            <img src="/placeholder.svg?height=160&width=160" alt="Profile" className="w-full h-full object-cover" />
+            <img src="placeholder.svg?height=160&width=160" alt="Profile" className="w-full h-full object-cover" />
           </div>
           <Button
             onClick={() => setShowInfo(true)}

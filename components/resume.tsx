@@ -40,11 +40,11 @@ export default function Resume() {
     window.print()
   }
 
-  // Images for the carousel
+  // Images for the carousel - update paths to be relative
   const carouselImages = [
-    "/placeholder.svg?height=200&width=800",
-    "/placeholder.svg?height=200&width=800",
-    "/placeholder.svg?height=200&width=800",
+    "placeholder.svg?height=200&width=800",
+    "placeholder.svg?height=200&width=800",
+    "placeholder.svg?height=200&width=800",
   ]
 
   return (
